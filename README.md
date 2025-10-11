@@ -1,2 +1,23 @@
 # ML-Playground
 A tidy hub for cloning ML repos, running examples, and tracking experiments across PyTorch/Scikit‑learn
+
+The first project is binary classification on predicting crack vs non-crack laser welded steel-copper lap joints. The dataset was obtained from mendeley repository cited below:
+
+Rinne, Jonas (2021), “Screening datasets for laser welded steel-copper lap joints ”, Mendeley Data, V2, doi: 10.17632/2s5m3crbkd.2
+
+The input features include:
+
+- Welding process parameters: welding power (W), welding speed (m/min), shielding gas flow (l/min), focal position (mm), and angular position.
+
+- Material/fixture context: block and strength provide run grouping and material strength context associated with each weld condition.
+
+- Geometry measurements: weld width in steel (µm), weld width in copper (µm), weld depth in copper (µm), and joint gap (µm) capture bead geometry and fit-up quality that influence cracking.
+
+- Other fields: weld number (each parameter combination was welded 5 times), position on weld path (mm), along with crack count and length, offer identifiers and supplemental crack characterization beyond the binary label.
+  
+
+Output label: 
+
+crack is encoded as 1 for crack and 0 for non-crack to support supervised classification from the above features.
+
+This analysis performs EDA, preprocessing, light feature engineering, and model pipelines for binary classification (crack=1, non-crack=0) using Logistic Regression, Gradient Boosting, and Random Forest, evaluated with grouped cross-validation and reported via ROC-AUC/F1; see the Jupyter Notebook file for exact steps to reproduce.
