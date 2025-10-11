@@ -1,3 +1,5 @@
+# Crack analysis in welded joints
+
 The first project is binary classification on predicting crack vs non-crack laser welded steel-copper lap joints. The dataset was obtained from mendeley repository cited below:
 
 Rinne, Jonas (2021), “Screening datasets for laser welded steel-copper lap joints ”, Mendeley Data, V2, doi: 10.17632/2s5m3crbkd.2
