@@ -1,0 +1,40 @@
+# Core scientific computing
+numpy
+scipy
+pandas
+
+# Data visualization
+matplotlib
+seaborn
+plotly
+
+# Machine learning
+scikit-learn
+xgboost
+lightgbm
+catboost
+
+# Deep learning (optional, comment out if not needed)
+tensorflow
+torch
+torchvision
+torchaudio
+
+# Model evaluation and utilities
+mlxtend
+joblib
+
+# Notebook and interactive environment
+jupyter
+notebook
+ipykernel
+tqdm
+
+# Data handling / preprocessing helpers
+openpyxl      # for Excel file reading
+scikit-optimize
+statsmodels
+
+# Optional quality of life tools
+black         # code formatting
+isort         # import sorting
