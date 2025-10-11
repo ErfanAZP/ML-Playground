@@ -1,23 +1,36 @@
 # ML-Playground
-A tidy hub for cloning ML repos, running examples, and tracking experiments across PyTorch/Scikit‑learn
 
-The first project is binary classification on predicting crack vs non-crack laser welded steel-copper lap joints. The dataset was obtained from mendeley repository cited below:
+This repository contains a collection of machine learning experiments and applications using various datasets. Each project is organized into its own folder, making it easy to explore, run, and extend. My goal here is to provide clear, reproducible examples of ML workflows, ranging from data preprocessing and exploratory analysis to model training and evaluation. 
 
-Rinne, Jonas (2021), “Screening datasets for laser welded steel-copper lap joints ”, Mendeley Data, V2, doi: 10.17632/2s5m3crbkd.2
+# Features
 
-The input features include:
+Variety of ML Algorithms: Includes regression, classification, clustering, and more.
 
-- Welding process parameters: welding power (W), welding speed (m/min), shielding gas flow (l/min), focal position (mm), and angular position.
+Modular Project Folders: Each dataset/project is self-contained for easier experimentation.
 
-- Material/fixture context: block and strength provide run grouping and material strength context associated with each weld condition.
+Reproducible Workflows: Notebooks and scripts include step-by-step pipelines from data preprocessing to model evaluation.
 
-- Geometry measurements: weld width in steel (µm), weld width in copper (µm), weld depth in copper (µm), and joint gap (µm) capture bead geometry and fit-up quality that influence cracking.
+Extensible: Designed for adding new datasets or trying new algorithms.
 
-- Other fields: weld number (each parameter combination was welded 5 times), position on weld path (mm), along with crack count and length, offer identifiers and supplemental crack characterization beyond the binary label.
-  
+# How to Use
 
-Output label: 
+Clone the repository:
 
-crack is encoded as 1 for crack and 0 for non-crack to support supervised classification from the above features.
+git clone https://github.com/ErfanAZP/ML-Playground.git
+cd ML-Playground
 
-This analysis performs EDA, preprocessing, light feature engineering, and model pipelines for binary classification (crack=1, non-crack=0) using Logistic Regression, Gradient Boosting, and Random Forest, evaluated with grouped cross-validation and reported via ROC-AUC/F1; see the Jupyter Notebook file for exact steps to reproduce.
+
+Install dependencies:
+
+Use the requirements.txt file and run the following command line:
+
+pip install -r requirements.txt
+
+
+Navigate to any project folder and explore the notebooks or scripts to see the workflow.
+
+Modify datasets or algorithms to run your own experiments.
+
+Contributing
+
+Contributions are welcome! Feel free to add your own dataset/project folder or improve existing ones. Please follow the existing folder structure for consistency.
